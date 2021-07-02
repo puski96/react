@@ -1,0 +1,61 @@
+.keresekTable {
+  border-collapse: collapse;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.keresekTable thead tr th {
+  background-color: #76aa6f;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+.keresekTable tbody tr {
+  border: 1px solid #f5f5f5;
+}
+.keresekTable tbody tr td {
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  background: #ffffff;
+  color: #777777;
+}
+.keresContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+.keresDiv div {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+}
+.keresDiv div input {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #151515;
+  background-color: transparent;
+  background-image: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #e1e1e1;
+  border-width: 0 0 1px 0;
+}
+.keresDiv div div {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-right: 15px;
+  width: 46%;
+}
+.keresDiv div h3 {
+  display: block;
+  width: 100%;
+}

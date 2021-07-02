@@ -1,0 +1,81 @@
+.infoBtnAdd {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 150px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #76aa6f;
+  border: 0;
+  color: #ffffff;
+}
+.infoBtnAdd a {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #76aa6f !important;
+  border: 0;
+  color: #ffffff !important;
+}
+.infoBtnAdd a:hover {
+  background-color: #27ae93 !important;
+}
+
+.infoBtn a {
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 0;
+  color: #ffffff !important;
+}
+.tagokTable {
+  margin-top: 30px;
+}
+.infoBtnAdd:hover {
+  background-color: #27ae93;
+  transition: all 0.25 ease-in;
+}
+.addForm {
+  width: 50%;
+  margin: 0 auto;
+}
+.addForm > div {
+  margin-bottom: 30px;
+}
+.adminContainer {
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30%;
+}
+.adminContainer article {
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 90%;
+  position: relative;
+  margin-bottom: 30px;
+  background-color: #f9faf9;
+}
+.jovahagyas {
+  margin-top: 30px;
+  margin-left: 150px;
+}
+.jovahagyas input {
+  margin: 10px;
+}
+.jovahagyas button {
+  margin: 10px;
+}
+.adminBox {
+  padding: 25px;
+  height: 350px !important;
+}
+.adminBox div {
+  height: 250px !important;
+}
+.szoveg {
+  height: 250px !important;
+}
+.adminBox button {
+  border: none;
+  margin-top: 10px;
+}

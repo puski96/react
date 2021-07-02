@@ -1,0 +1,204 @@
+.oneRow {
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 27px 30px 25px 30px;
+  position: relative;
+  border-bottom: 2px solid #ffffff;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.leftContent {
+  width: 65%;
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  max-width: 65%;
+  /* width: 100%; */
+  margin: 0 auto;
+  margin: 10px 0;
+  height: 133px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 75px;
+}
+
+.img img {
+  margin: 0 auto;
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+  height: 100%;
+}
+
+.details {
+  margin-left: 30px;
+  display: inline-block;
+  max-width: 75%;
+}
+
+.leftCName {
+  font-size: 18px;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.4;
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-top: -15px;
+}
+
+.info {
+  display: flex;
+  margin-top: 10px;
+}
+
+.rigthContent {
+  display: flex;
+  flex: 0 0 25%;
+  max-width: 45%;
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+.contactInfo {
+  width: 70%;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.message {
+  font-size: 120%;
+  vertical-align: middle;
+  margin: auto;
+  background-color: #27ae93;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.message a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.message:hover {
+  background-color: #f49b4d;
+}
+
+.telefon {
+  font-size: 120%;
+  vertical-align: middle;
+  margin: auto;
+  background-color: #27ae93;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.telefon a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.telefon:hover {
+  background-color: #f49b4d;
+}
+
+.contact {
+  margin: auto;
+}
+
+.containerAd {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  width: 93%;
+  margin: auto;
+  flex: 0 0 66.66667%;
+  margin: 20px;
+  display: block;
+}
+.hirdetDiv {
+  width: 30% !important;
+}
+.keresDiv div h2 {
+  display: block !important;
+  width: 100% !important;
+}
+.btnSalvare {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #76aa6f;
+  border: 0;
+  color: #ffffff;
+}
+.btnSalvare:hover {
+  background-color: #27ae93;
+  transition: all 0.25 ease-in;
+}
+.uploadDiv {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 130px;
+  margin-bottom: 50px;
+}
+.uploadDiv input {
+  width: 90px;
+  height: 24px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.uploadDiv button {
+  margin-left: 30%;
+  margin-top: 30px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #76aa6f;
+  border: 0;
+  color: #ffffff;
+}
+
+.uploadDiv input + label {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #76aa6f;
+  border: 0;
+  color: #ffffff;
+}
+
+.uploadDiv input:focus + label,
+.uploadDiv input + label:hover {
+  background-color: #27ae93;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .leftContent {
+    width: 100%;
+  }
+  .rigthContent {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .info {
+    display: inline-flex;
+    margin-left: 20px;
+  }
+  .contactInfo {
+    flex: none;
+    margin-right: 10px;
+  }
+}

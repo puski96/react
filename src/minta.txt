@@ -1,0 +1,146 @@
+import React, { Component } from "react";
+import Select from "react-select";
+import axios from "axios";
+import AdminPanelService from "../service/AdminPanelService";
+
+class AdminComponent extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      id: this.props.match.params.id,
+      nev: "",
+      cim: "",
+      telszam: "",
+      biro: "",
+      email: "",
+      egyesulet: "",
+    };
+    this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
+    this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
+    this.saveOrUpdateEmployee = this.saveOrUpdateEmployee.bind(this);
+  }
+
+  componentDidMount() {
+    if (this.state.id === "_add") {
+      return;
+    } else {
+      AdminPanelService.getTulajById(this.state.id).then((res) => {
+        let tulaj = res.data;
+        this.setState({
+          nev: tulaj.nev,
+          cim: tulaj.cim,
+          telszam: tulaj.telszam,
+          biro: tulaj.biro,
+          email: tulaj.email,
+          egyesulet: tulaj.egyesulet,
+        });
+      });
+    }
+  }
+  saveOrUpdateTulaj = (e) => {
+    e.preventDefault();
+    let tulaj = {
+      nev: this.state.nev,
+      cim: this.state.cim,
+      telszam: this.state.telszam,
+      biro: this.state.biro,
+      email: this.state.email,
+      egyesulet: this.state.email,
+    };
+    console.log("tulaj => " + JSON.stringify(tulaj));
+
+    if (this.state.id === "_add") {
+      AdminPanelService.createTulaj(tulaj).then((res) => {});
+    } else {
+      AdminPanelService.updateTulaj(
+        tulaj,
+        this.state.id
+      ).then((res) => {});
+    }
+  };
+
+  changeFirstNameHandler = (event) => {
+    this.setState({ firstName: event.target.value });
+  };
+
+  changeLastNameHandler = (event) => {
+    this.setState({ lastName: event.target.value });
+  };
+
+  changeEmailHandler = (event) => {
+    this.setState({ emailId: event.target.value });
+  };
+
+  
+  async getOptions() {
+    const res = await axios.get("http://localhost:8090/api/egyesulet");
+    const data = res.data;
+
+    const options = data.map((response) => ({
+      value: response.id,
+      label: response.nev,
+    }));
+    this.setState({ selectOptions: options });
+    console.log(options);
+  }
+  componentDidMount() {
+    this.getOptions();
+  }
+  render() {
+    const options = [
+      { value: "chocolate", label: "Chocolate" },
+      { value: "strawberry", label: "Strawberry" },
+      { value: "vanilla", label: "Vanilla" },
+    ];
+    const MyComponent = () => <Select options={options} />;
+    return (
+      <div>
+        <form>
+          <div className="form-group">
+            <label> First Name: </label>
+            <input
+              placeholder="First Name"
+              name="firstName"
+              className="form-control"
+              value={this.state.firstName}
+              onChange={this.changeFirstNameHandler}
+            />
+          </div>
+          <div className="form-group">
+            <label> Last Name: </label>
+            <input
+              placeholder="Last Name"
+              name="lastName"
+              className="form-control"
+              value={this.state.lastName}
+              onChange={this.changeLastNameHandler}
+            />
+          </div>
+          <div className="form-group">
+            <label> Email Id: </label>
+            <input
+              placeholder="Email Address"
+              name="emailId"
+              className="form-control"
+              value={this.state.emailId}
+              onChange={this.changeEmailHandler}
+            />
+          </div>
+          <div>
+            <Select options={this.state.selectOptions} />
+          </div>
+
+          <button
+            className="btn btn-success"
+            onClick={this.saveOrUpdateEmployee}
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    );
+  }
+}
+
+export default AdminComponent;
