@@ -57,5 +57,8 @@
   },
   "devDependencies": {
     "react-alice-carousel": "^2.4.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
   }
 }
