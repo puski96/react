@@ -59,6 +59,6 @@
     "react-alice-carousel": "^2.4.0"
   },
   "optionalDependencies": {
-    "fsevents": "*"
+    "fsevents": "^2.1.2"
   }
 }
