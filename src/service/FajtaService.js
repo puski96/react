@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const fajtak = "https://tenyeszto.herokuapp.com/";
+const fajtak = "https://tenyeszto.herokuapp.com/api/fajta";
 
 class FajtaService {
   getFajtak() {
