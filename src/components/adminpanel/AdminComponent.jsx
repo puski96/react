@@ -7,7 +7,6 @@ import img1 from "../../img/album/20200314_142546.jpg";
 import img2 from "../../img/album/20200204_135331.jpg";
 import FajtaService from "../../service/FajtaService.js";
 import { Link } from "react-router-dom";
-import EmailSenderComponent from "../EmailSenderComponent";
 
 class AdminComponent extends Component {
   constructor(props) {
