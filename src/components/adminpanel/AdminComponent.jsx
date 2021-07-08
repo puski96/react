@@ -120,9 +120,6 @@ class AdminComponent extends Component {
                 </button>
               </div>
             </article>
-            <article>
-              <EmailSenderComponent />
-            </article>
           </div>
         </div>
       </div>
