@@ -40,7 +40,11 @@ class TenyesztokComponent extends Component {
           "Bearer " + JSON.parse(localStorage.getItem("user")).access_token,
       },
     };
-    axios.put("https://tenyeszto.herokuapp.com/api/auth/upgrade/${id}`,id, axiosConfig);
+    axios.put(
+      `https://tenyeszto.herokuapp.com//api/auth/upgrade/${id}`,
+      id,
+      axiosConfig
+    );
   }
 
   deleteTenyeszto(id) {
