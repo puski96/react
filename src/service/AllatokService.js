@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const kisallatok = "http://localhost:8090/api/kisallat";
+const kisallatok = "https://tenyeszto.herokuapp.com/api/kisallat";
 
 let axiosConfig = {
   headers: {

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const reszvetel = "http://localhost:8090/api/kresztvesz";
+const reszvetel = "https://tenyeszto.herokuapp.com/api/kresztvesz";
 let axiosConfig = {
   headers: {
     "Content-Type": "application/json;charset=UTF-8",

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const keresek = "http://localhost:8090/api/keres";
+const keresek = "https://tenyeszto.herokuapp.com/api/keres";
 
 let axiosConfig = {
   headers: {

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const kiallitasok = "http://localhost:8090/api/kiallitas";
+const kiallitasok = "https://tenyeszto.herokuapp.com/api/kiallitas";
 let axiosConfig = {
   headers: {
     "Content-Type": "application/json;charset=UTF-8",

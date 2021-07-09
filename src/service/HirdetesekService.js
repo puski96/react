@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const hirdetesek = "http://localhost:8090/api/hirdetesek";
+const hirdetesek = "https://tenyeszto.herokuapp.com/api/hirdetesek";
 let axiosConfig = {
   headers: {
     "Content-Type": "application/json;charset=UTF-8",

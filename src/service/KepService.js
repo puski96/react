@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const kepek = "http://localhost:8090/api/file";
+const kepek = "https://tenyeszto.herokuapp.com/api/file";
 
 class KepService {
   getKepek() {

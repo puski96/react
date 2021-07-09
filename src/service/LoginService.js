@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const login = "http://localhost:8090/api/auth";
+const login = "https://tenyeszto.herokuapp.com/api/auth";
 let axiosConfig = {
   headers: {
     "Content-Type": "application/json;charset=UTF-8",

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const tulajok = "http://localhost:8090/api/tulaj/get";
+const tulajok = "https://tenyeszto.herokuapp.com/api/tulaj/get";
 
 let axiosConfig = {
   headers: {
