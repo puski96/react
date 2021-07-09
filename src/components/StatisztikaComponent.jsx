@@ -73,7 +73,7 @@ class StatisztikaComponent extends Component {
   }
   componentDidMount() {
     axios
-      .get("http://localhost:8090/api/fajta/counterI")
+      .get("https://tenyeszto.herokuapp.com/api/fajta/counterI")
       .then((response) => {
         this.setState({
           countedI: response.data,
@@ -97,7 +97,7 @@ class StatisztikaComponent extends Component {
         console.log(error);
       });
     axios
-      .get("http://localhost:8090/api/fajta/counterG")
+      .get("https://tenyeszto.herokuapp.com/api/fajta/counterG")
       .then((response) => {
         this.setState({
           countedG: response.data,
@@ -123,7 +123,7 @@ class StatisztikaComponent extends Component {
         console.log(error);
       });
     axios
-      .get("http://localhost:8090/api/fajta/counterT")
+      .get("https://tenyeszto.herokuapp.com/api/fajta/counterT")
       .then((response) => {
         this.setState({
           countedT: response.data,
@@ -150,7 +150,7 @@ class StatisztikaComponent extends Component {
         console.log(error);
       });
     axios
-      .get("http://localhost:8090/api/fajta/counterT")
+      .get("https://tenyeszto.herokuapp.com/api/fajta/counterT")
       .then((response) => {
         this.setState({
           countedT: response.data,

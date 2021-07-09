@@ -67,7 +67,7 @@ class Header extends Component {
       this.state.username +
       "&password=" +
       this.state.password;
-    xhttp.open("POST", "http://localhost:8090/oauth/token", true);
+    xhttp.open("POST", "https://tenyeszto.herokuapp.com/oauth/token", true);
     xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhttp.setRequestHeader("Authorization", "Basic " + btoa("CLIENTID:SECRET"));
     xhttp.send(data);

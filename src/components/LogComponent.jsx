@@ -4,7 +4,7 @@ class LogComponent extends Component {
   loginClk() {
     axios
       .post({
-        baseURL: "http://localhost:8090/",
+        baseURL: "https://tenyeszto.herokuapp.com/",
         url: "oauth/token",
         contentType: "application/x-www-form-urlencoded",
         authorization: "Basic " + btoa("CLIENTID:SECRET"),

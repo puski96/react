@@ -18,7 +18,7 @@ class RegisterComponent extends Component {
   }
   componentDidMount() {
     axios
-      .get(`http://localhost:8090/api/helysegek`)
+      .get(`https://tenyeszto.herokuapp.com/api/helysegek`)
       .then((res) => {
         this.setState({ helysegek: res.data });
         console.log(res.data);
@@ -51,7 +51,7 @@ class RegisterComponent extends Component {
           : alert("Parolă greșită"),
     };
     axios
-      .post("http://localhost:8090/api/auth/registration", {
+      .post("https://tenyeszto.herokuapp.com/api/auth/registration", {
         userName: this.state.email,
         password: this.state.password,
       })

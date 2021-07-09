@@ -36,7 +36,7 @@ class AddImageComponent extends Component {
     const formData = new FormData();
     formData.append("uploadfile", this.state.uploadfile);
     axios.post(
-      `http://localhost:8090/api/file/upload/${this.state.hirdetesId}`,
+      `https://tenyeszto.herokuapp.com/api/file/upload/${this.state.hirdetesId}`,
       formData,
       axiosConfig
     );

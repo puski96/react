@@ -96,7 +96,7 @@ class AddAllatComponent extends Component {
       },
     };
     const res = await axios.get(
-      "http://localhost:8090/api/kisallat",
+      "https://tenyeszto.herokuapp.com/api/kisallat",
       axiosConfig
     );
     const data = res.data;
@@ -110,7 +110,9 @@ class AddAllatComponent extends Component {
     console.log(options);
   }
   async getKiallitasok() {
-    const res = await axios.get("http://localhost:8090/api/kiallitas");
+    const res = await axios.get(
+      "https://tenyeszto.herokuapp.com/api/kiallitas"
+    );
     const data = res.data;
 
     const options = data.map((response) => ({
