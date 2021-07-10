@@ -483,7 +483,7 @@ hr {
     display: none;
   }
   .container {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
   .fa-bars {
     font-size: 200%;
