@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import KepService from "../service/KepService";
-import HirdetesService from "../service/HirdetesekService";
+import HirdetesService from "../service/HirdetesService";
 
 class AddImageComponent extends Component {
   constructor(props) {

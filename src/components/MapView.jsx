@@ -4,7 +4,7 @@ import React, { PureComponent } from "react";
 import jel from "../img/map-marker-png-download.png";
 import ReactMapGL, { Marker } from "react-map-gl";
 import HelysegekService from "../service/HelysegekService";
-import HirdetesService from "../service/HirdetesekService";
+import HirdetesService from "../service/HirdetesService";
 
 const Map = ReactMapboxGl({
   accessToken:
