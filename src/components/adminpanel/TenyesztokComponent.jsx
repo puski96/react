@@ -41,7 +41,7 @@ class TenyesztokComponent extends Component {
       },
     };
     axios.put(
-      `https://tenyeszto.herokuapp.com//api/auth/upgrade/${id}`,
+      `https://tenyeszto.herokuapp.com/api/auth/upgrade/${id}`,
       id,
       axiosConfig
     );
