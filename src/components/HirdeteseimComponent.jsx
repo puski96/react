@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HirdetesService from "../service/HirdetesekService";
+import HirdetesService from "../service/HirdetesService";
 import { Link } from "react-router-dom";
 import jwtDecode from "jwt-decode";
 import TenyesztokService from "../service/TenyesztokService";

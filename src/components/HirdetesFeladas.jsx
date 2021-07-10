@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HirdetesService from "../service/HirdetesekService";
+import HirdetesService from "../service/HirdetesService";
 import KepService from "../service/KepService";
 import axios from "axios";
 import jwtDecode from "jwt-decode";

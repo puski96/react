@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import kep1 from "../img/No_image_3x4.svg.png";
-import HirdetesService from "../service/HirdetesekService";
-import axios from "axios";
+import HirdetesService from "../service/HirdetesService";
 
 class HirdetesComponent extends Component {
   constructor(props) {
@@ -20,8 +19,7 @@ class HirdetesComponent extends Component {
       console.log("Latitude is :", position.coords.latitude);
       console.log("Longitude is :", position.coords.longitude);
     });
-    axios
-      .get("https://tenyeszto.herokuapp.com/api/hirdetesek/get")
+    HirdetesService.getHirdetesek()
       .then((res) => {
         this.setState({ hirdetesek: res.data });
         console.log(this.state.hirdetesek);
