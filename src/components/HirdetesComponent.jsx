@@ -19,7 +19,8 @@ class HirdetesComponent extends Component {
       console.log("Latitude is :", position.coords.latitude);
       console.log("Longitude is :", position.coords.longitude);
     });
-    HirdetesService.getHirdetesek()
+    axios
+      .get("https://tenyeszto.herokuapp.com/api/hirdetesek/get")
       .then((res) => {
         this.setState({ hirdetesek: res.data });
         console.log(this.state.hirdetesek);
