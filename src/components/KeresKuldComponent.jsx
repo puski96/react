@@ -69,7 +69,7 @@ class KeresKuldComponent extends Component {
     KeresService.addKeres(keres).then((res) => {});
   };
   async getOptions() {
-    const res = await axios.get("http://localhost:8090/api/fajta");
+    const res = await axios.get("https://tenyeszto.herokuapp.com/api/fajta");
     const data = res.data;
 
     const options = data.map((response) => ({
