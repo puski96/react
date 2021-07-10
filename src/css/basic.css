@@ -482,6 +482,9 @@ hr {
   #menu {
     display: none;
   }
+  .container {
+    margin-left: 0;
+  }
   .fa-bars {
     font-size: 200%;
     margin-right: 35px;
@@ -499,6 +502,9 @@ hr {
   .description {
     margin-bottom: 100px;
     width: 100%;
+  }
+  .description h2 {
+    margin: 33%;
   }
   .imgs {
     margin-top: 50px;
@@ -522,6 +528,11 @@ hr {
   .footer {
     max-height: 800px;
     text-align: center;
+  }
+  .navbar ul {
+    padding-left: 0;
+    flex-wrap: nowrap;
+    margin: 0 auto;
   }
 }
 
