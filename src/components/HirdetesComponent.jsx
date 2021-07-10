@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import kep1 from "../img/No_image_3x4.svg.png";
 import HirdetesService from "../service/HirdetesekService";
+import axios from "axios";
 
 class HirdetesComponent extends Component {
   constructor(props) {
