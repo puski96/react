@@ -22,7 +22,7 @@ class KeresKuldComponent extends Component {
       nostenyek: "",
       szuldat: "",
       fajta: "",
-      nev: "",
+      tulajId: "",
       fajtak: [],
       authorities: [],
       loggedIn: "",
@@ -43,7 +43,7 @@ class KeresKuldComponent extends Component {
       TenyesztokService.getTenyesztoByEmail(this.state.user).then((res) => {
         this.setState({
           loggedIn: res.data.nev,
-          nev: res.data.nev,
+          tulajId: res.data,
         });
         console.log(res.data.nev);
       });
@@ -62,7 +62,7 @@ class KeresKuldComponent extends Component {
       nostenyek: this.state.nostenyek,
       szuldat: this.state.szuldat,
       fajta: this.state.fajta,
-      nev: this.state.nev,
+      tulajId: this.state.nev,
     };
     console.log("keres => " + JSON.stringify(keres));
 
