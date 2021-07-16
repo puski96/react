@@ -45,7 +45,7 @@ class KeresKuldComponent extends Component {
           loggedIn: res.data.nev,
           tulajdonos: res.data,
         });
-        console.log(res.data.nev);
+        console.log(res.data);
       });
     });
     return;
@@ -62,7 +62,7 @@ class KeresKuldComponent extends Component {
       nostenyek: this.state.nostenyek,
       szuldat: this.state.szuldat,
       fajta: this.state.fajta,
-      tulajdonos: this.state.nev,
+      tulajdonos: this.state.tulajdonos,
     };
     console.log("keres => " + JSON.stringify(keres));
 
