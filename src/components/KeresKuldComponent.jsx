@@ -22,7 +22,8 @@ class KeresKuldComponent extends Component {
       nostenyek: "",
       szuldat: "",
       fajta: "",
-      tulajId: "",
+      nev: "",
+      tulajId: 0,
       fajtak: [],
       authorities: [],
       loggedIn: "",
@@ -43,9 +44,10 @@ class KeresKuldComponent extends Component {
       TenyesztokService.getTenyesztoByEmail(this.state.user).then((res) => {
         this.setState({
           loggedIn: res.data.nev,
-          tulajId: res.data,
+          nev: res.data.nev,
+          tulajId: res.data.id,
         });
-        console.log(res.data);
+        console.log(res.data.id);
       });
     });
     return;
