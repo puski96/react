@@ -116,8 +116,8 @@ class Header extends Component {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink activeClassName="active" to={"/anunturi"}>
-                    Anunțuri
+                  <NavLink activeClassName="active" to={"/membri"}>
+                    Membri
                   </NavLink>
                 </li>
                 <li>
@@ -152,8 +152,8 @@ class Header extends Component {
                 </NavLink>
               </li>
               <li>
-                <NavLink activeClassName="active" to={"/anunturi"}>
-                  Anunțuri
+                <NavLink activeClassName="active" to={"/membri"}>
+                  Membri
                 </NavLink>
               </li>
               <li>
@@ -219,14 +219,6 @@ class Header extends Component {
                   return (
                     <ul style={{ paddingLeft: 0 }}>
                       <li>
-                        <NavLink
-                          activeClassName="active"
-                          to={"/anunturile-mele"}
-                        >
-                          Adaugă un anunț
-                        </NavLink>
-                      </li>
-                      <li>
                         <NavLink activeClassName="active" to={"/membri"}>
                           Membri
                         </NavLink>
@@ -255,14 +247,6 @@ class Header extends Component {
                   return (
                     <ul style={{ paddingLeft: 0 }}>
                       <li>
-                        <NavLink
-                          activeClassName="active"
-                          to={"/anunturile-mele"}
-                        >
-                          Adaugă un anunț
-                        </NavLink>
-                      </li>
-                      <li>
                         <NavLink activeClassName="active" to={"/membri"}>
                           Membri
                         </NavLink>
@@ -286,14 +270,6 @@ class Header extends Component {
                   return (
                     <ul style={{ paddingLeft: 0 }}>
                       <li>
-                        <NavLink
-                          activeClassName="active"
-                          to={"/anunturile-mele"}
-                        >
-                          Adaugă un anunț
-                        </NavLink>
-                      </li>
-                      <li>
                         <NavLink activeClassName="active" to={"/membri"}>
                           Membri
                         </NavLink>
@@ -311,14 +287,6 @@ class Header extends Component {
                 if (auth === "ROLE_USER")
                   return (
                     <ul style={{ paddingLeft: 0 }}>
-                      <li>
-                        <NavLink
-                          activeClassName="active"
-                          to={"/anunturile-mele"}
-                        >
-                          Adaugă un anunț
-                        </NavLink>
-                      </li>
                       <li>
                         <NavLink activeClassName="active" to={"/membri"}>
                           Membri
